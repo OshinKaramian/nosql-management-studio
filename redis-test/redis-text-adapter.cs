@@ -14,6 +14,7 @@ namespace redistest
 		{
 			textHash.Add("get", 1);
 			textHash.Add("set", 2);
+			textHash.Add("getset", 3);
 			_r = r;
 		}
 		
@@ -68,6 +69,7 @@ namespace redistest
 		private void cleanString(ref string input)
 		{
 		//	input = Regex.Replace(input, @”\s+”, ” “);
+			input = input.ToLower();
 		}
 		
 		

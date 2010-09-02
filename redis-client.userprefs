@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" ctype="Workspace" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RedisAdapter.cs" ctype="Workbench">
+    <Files>
+      <File FileName="RedisAdapter.cs" Line="15" Column="4" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="redis-client" expanded="True" selected="True">
+            <Node name="UserInterface" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

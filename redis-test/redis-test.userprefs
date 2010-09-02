@@ -1,16 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" ctype="Workspace" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="redis-sharp.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="redis-text-adapter.cs" ctype="Workbench">
     <Files>
-      <File FileName="Main.cs" Line="14" Column="4" />
-      <File FileName="redis-sharp.cs" Line="26" Column="12" />
-      <File FileName="../../.cache/.fr-aOBwQq/Retwis-csharp/App_Code/Retwis.cs" Line="111" Column="6" />
+      <File FileName="Main.cs" Line="18" Column="1" />
+      <File FileName="redis-sharp.cs" Line="1" Column="1" />
+      <File FileName="redis-text-adapter.cs" Line="14" Column="4" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="redis-test" expanded="True">
-            <Node name="redis-sharp.cs" selected="True" />
+            <Node name="redis-text-adapter.cs" selected="True" />
           </Node>
         </State>
       </Pad>
