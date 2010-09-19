@@ -14,27 +14,33 @@ namespace redisclient
  			
 			//Create the Window
 			Window myWin = new Window("My first GTK# Application! ");
-		    myWin.Resize(200,200);
+		    myWin.Resize(500,500);
 			
 			myLabel = new Label();
 			userInputField = new TextView();
 		    
 			Button runCommand = new Button("run_command");
-		    //Create a label and put some text in it.     
 		    runCommand.Clicked += HandleRunCommandClicked;
+		
+		
+			MenuBar mainBar = new MenuBar();
+			MenuItem exitItem = new MenuItem("File");
 			
+			MenuBar subMenu = new MenuBar();
+			MenuItem subItem = new MenuItem("File");
+			
+			subMenu.Add(subItem);
+			mainBar.Add(exitItem);
+				
 			VBox testBox = new VBox(false, 3);
 			
+			testBox.PackStart(mainBar);
 			testBox.PackStart(userInputField);
 			testBox.PackStart(myLabel);
 			testBox.PackStart(runCommand);
 			 
 			myWin.Add(testBox);
-			 
-		    //Add the label to the form     
-		    //myWin.Add(myLabel);			
-
-		     
+				     
 		    //Show Everything     
 		    myWin.ShowAll();
 		     
@@ -45,7 +51,6 @@ namespace redisclient
 		{
 			TextBuffer b = userInputField.Buffer;
 			Redis r = new Redis("localhost", 6379);
-			//string s = r.GetString("mykey");
 			redis_text_adapter userInput = new redis_text_adapter(r);
 						
 			string t = userInput.ParseText(b.Text);
